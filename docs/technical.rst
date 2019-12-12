@@ -9,10 +9,9 @@ The Makeflow file allows for easy integration of new extractors. Please
 
 
 
-Stereotop Benchmarking workflow
+Stereotop Benchmarking Workflow Process
 -------------------------------
-* Get Jetstream account ask Eric if you don’t yet have one ASAP
-
+* Get Jetstream account 
 * Launch Base Ubuntu image on jetstream
 * Setup 
 
@@ -31,9 +30,6 @@ Stereotop Benchmarking workflow
    "irods_port": 1247,
    "irods_user_name": "username",
    "irods_zone_name": "iplant"
-
-
-https://ua-acic.slack.com/files/UMEP6F4AE/FQWAM5F1R/image.png
 
 * Stage data
 
@@ -86,13 +82,9 @@ This creates 3 output files that we can aggregate and use GNUplot to display in 
 Benchmark each extractor individually
 
 
-
-//old 
 * Launch cctools image (as large as possible 44core last one) on jetstream (or atmosphere?)
 https://github.com/uacic/starTerra/tree/master/stereoTop
 https://jxuzy.blogspot.com/2019/11/install-cctools-ubuntu-1804lts.html
-//
-
 
 
 
@@ -124,37 +116,8 @@ rm nohup.out
 
 Benchmarking Results
 
-Stereotop: 
+Stereotop:
 
-
-
-Number of images
-(Will be) Run by:
-Completed: (write yes when finished)
-5
-Kai / 
-Yes / 
-10
-MingL / Kai
-/ Yes
-15
-TC / 
-Yes / 
-20
-Ace / TC
-/ Yes
-25
-Kai / 
-Yes /
-30
-TC / Josh
-Yes / 
-35
-Kai / 
-Yes /
-40
-Ace / Kai
-/ Yes
 
 
 Scanner3DTop:
