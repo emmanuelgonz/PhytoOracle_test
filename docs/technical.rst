@@ -102,13 +102,12 @@ Running Benchmarks:
 python gen_files_list.py 2018-05-15/ 2 > raw_data_files.json
 
 * remove the , at the end of the raw_data_files.json file
+.. code::
+   php main_wf.php > main_wf.jx
+   jx2json main_wf.jx > main_workflow.json
+   nohup bash entrypoint.bsh -r 0 &
 
-php main_wf.php > main_wf.jx
-jx2json main_wf.jx > main_workflow.json
-
-nohup bash entrypoint.bsh -r 0 &
-
-*Save the following output files: 
+* Save the following output files: 
 
 + sysUsage.txt
 + cpuUsage.txt
