@@ -1,20 +1,27 @@
 Technical User Manual
 =====================
 
-
 Integrating new extractors
 --------------------------
-The Makeflow file allows for easy integration of new extractors. Please 
- 
+The Makeflow file allows for easy integration of new extractors.
 
 
+Preliminary Benchmark Results:
+------------------------------
+
++ How long it took to run the full dataset: 15:40:11
++ Software installation: CCTools, Singularity
++ Time to Stage Data: < 1hr for 9360 folders
++ Average Tasks/minute: 10.25 
++ # Worker Factories connected: 4 xxlarge Jetstream VMs (CPU: 44, MEM: 128GB, Disk: 480GB)
++ Results deposition: Results transferred to CyVerse Data Store using iRODS
 
 Stereotop Benchmarking workflow
 -------------------------------
 * Get Jetstream account ask Eric if you don’t yet have one ASAP
 
 * Launch Base Ubuntu image on jetstream
-* Setup 
+* Setup
 
 .. code::
    
