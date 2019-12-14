@@ -96,30 +96,31 @@ https://jxuzy.blogspot.com/2019/11/install-cctools-ubuntu-1804lts.html
 
 
 Running Benchmarks:
-# run this in /opt/src/starTerra-php-template/stereoTop
-#assume you have the setup Tanner lead up through dec 11th.
-# makes the raw data files with number given for example here (2)
+* Run this in /opt/src/starTerra-php-template/stereoTop
+* Assume you have the setup Tanner lead up through dec 11th.
+* Makes the raw data files with number given for example here (2)
 python gen_files_list.py 2018-05-15/ 2 > raw_data_files.json
 
-#remove the , at the end of the raw_data_files.json file
+* remove the , at the end of the raw_data_files.json file
 
 php main_wf.php > main_wf.jx
 jx2json main_wf.jx > main_workflow.json
 
 nohup bash entrypoint.bsh -r 0 &
 
-#Save the following output files: 
+*Save the following output files: 
 
-- sysUsage.txt
-- cpuUsage.txt
-- memUsage.txt
-- nohup.out
++ sysUsage.txt
++ cpuUsage.txt
++ memUsage.txt
++ nohup.out
 
-# clears the old stuff
-bash entrypoint.bsh -c
-rm nohup.out
+* clears the old stuff
+.. code::
+   bash entrypoint.bsh -c
+   rm nohup.out
 
-# run these tests upto 40
+* Run these tests upto 40
 
 Benchmarking Results
 
